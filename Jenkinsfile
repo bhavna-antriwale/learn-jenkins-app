@@ -33,6 +33,7 @@ pipeline {
 
             steps {
                 sh '''
+                    echo "Checking value"
                     #test -f build/index.html
                     npm test
                 '''
