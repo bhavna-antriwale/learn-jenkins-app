@@ -61,7 +61,7 @@ pipeline {
 
     post {
         always {
-            junit 'test-results/junit.xml'
+            junit '/var/jenkins_home/workspace/LearnJenkinsPipeline/test-results/junit.xml'
         }
     }
 }
