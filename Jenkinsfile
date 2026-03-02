@@ -61,9 +61,13 @@ pipeline {
 
     post {
         always {
-            sh 'echo "Current working directory is: $PWD"'
-            sh 'echo "WORKSPACE environment variable value: $WORKSPACE"'
-            
+            junit(testResults: 'jest-results/junit.xml')
+        }
+        success {
+            echo 'Build succeeded!'
+        }
+        failure {
+            echo 'Build failed!'
         }
     }
 }
