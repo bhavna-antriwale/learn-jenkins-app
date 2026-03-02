@@ -61,9 +61,9 @@ pipeline {
 
     post {
         always {
-            sh '''
-                echo '${pwd}'
-            '''
+            sh 'echo "Current working directory is: $PWD"'
+            sh 'echo "WORKSPACE environment variable value: $WORKSPACE"'
+            
         }
     }
 }
