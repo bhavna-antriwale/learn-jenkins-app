@@ -66,10 +66,10 @@ pipeline {
 
         }
         success {
-            echo 'Build succeeded!'
+            echo 'Build succeeded with Webhook!'
         }
         failure {
-            echo 'Build failed!'
+            echo 'Build failed with Webhook!'
         }
     }
 }
