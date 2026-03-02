@@ -62,7 +62,7 @@ pipeline {
     post {
         always {
             sh '''
-                ls
+                echo pwd
             '''
         }
     }
